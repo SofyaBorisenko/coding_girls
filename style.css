@@ -80,6 +80,10 @@
 	font-size: 14px;
 }
 
+.body {
+	display: flex;
+}
+
 .block {
 	background: #ffffff;
 	text-align: center;
