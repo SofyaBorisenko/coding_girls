@@ -90,6 +90,8 @@
 	list-style: none;
 	justify-content: space-between;
 	padding: 80px 80px 80px 120px;
+	width: 1180px;
+	margin: 0 auto;
 }
 
 .main-menu-item {
@@ -126,6 +128,8 @@
 	background: #ffffff;
 	text-align: center;
 	align-content: center;
+	width: 1180px;
+	margin: 0 auto;
  }
 
 .block-subtitle {
@@ -156,4 +160,10 @@
 	font-size: 14px;
 	font-family: OpenSans, sans-serif;
 	font-weight: 400;
+}
+
+.hover:before {
+	background: rgba(0, 0, 0, 50%);
+	width: ;
+	height: ;
 }
