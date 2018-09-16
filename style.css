@@ -177,18 +177,30 @@
 
 .hover:before {
 	content: '';
-	display: block;
-	position: absolute;
+	opacity: 0;
 	background: rgba(0, 0, 0, 50%);
 	width: 700px;
 	height: 348px;
+	position: absolute;
+	transition: all 2s;
 }
 
 .text-hover {
 	position: absolute;
-	left: 275px;
-	top: 125px;
+	width: 100%;
+	top: 50%;
 	text-align: center;
+	margin-top: -69px;
+	opacity: 0;
+	transition: all 2s;
+}
+
+.hover:hover .text-hover{
+	opacity: 1;
+}
+
+.hover:hover:before{
+	opacity: 1;
 }
 
 .footer-background {
