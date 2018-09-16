@@ -1,3 +1,42 @@
+@font-face {
+	src: url('./fonts/AvenirNextCyr-Regular.ttf');
+	font-family: AvenirNext;
+}
+
+@font-face {
+	src: url('./fonts/ProximaNova-Reg.otf');
+	font-family: ProximaNova;
+	font-weight: 400;
+}
+
+@font-face {
+	src: url('./fonts/ProximaNova-Semibold.ttf');
+	font-family: ProximaNova;
+	font-weight: 600;	
+}
+
+@font-face {
+	src: url('./fonts/OpenSans-Regular.ttf');
+	font-family: OpenSans;
+	font-weight: 400;
+}
+
+@font-face {
+	src: url('./fonts/OpenSans-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	src: url('./fonts/OpenSans-Light.ttf');
+	font-family: OpenSans;
+	font-weight: 100;
+}
+
+@font-face {
+	src: url('./fonts/Montserrat-Regular.otf');
+	font-family: Montserrat;
+}
+
 .header {
 	display: flex;
     justify-content: space-between;
@@ -16,6 +55,7 @@
 	width: 500px;
 	list-style: none;
 	justify-content: space-between;
+	font-family: AvenirNext, sans-serif;
 }
 
 
@@ -34,7 +74,7 @@
 	color: #ffffff;
 	font-size: 40px;
 	text-transform: uppercase;
-	font-weight: normal;
+	font-family: AvenirNext, sans-serif;
 	margin: 500px 0 0 30px;
 }
 
@@ -42,7 +82,8 @@
 	color: #ffffff;
 	font-size: 15px;
 	text-transform: uppercase;
-	font-weight: normal;
+	font-family: OpenSans, sans-serif;
+	font-weight: 700;
 	margin: 5px 0 0 30px;
 }
 
@@ -55,7 +96,9 @@
 	align-items: baseline;
 	list-style: none;
 	justify-content: space-between;
-	padding: 80px 80px 80px 120px;
+	padding: 80px 80px 80px 50px;
+	width: 1180px;
+	margin: 0 auto;
 }
 
 .main-menu-item {
@@ -65,34 +108,43 @@
 
 .main-subtitle {
 	color: #ffffff;
-	font-size: 24.04px;
-	font-weight: normal;
+	font-size: 24px;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
 }
 
 .main-menu-text {
 	color: #ffffff;
-	font-size: 13.99px;
+	font-family: ProximaNova, sans-serif;
+	font-size: 14px;
 }
 
 .main-menu-link {
 	color: #ffffff;
 	text-decoration: none;
 	font-size: 14px;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
 }
 
-.body {
+.info {
 	display: flex;
+	width: 1180px;
+	height: 348px;
+	margin: 0 auto;
 }
 
 .block {
 	background: #ffffff;
 	text-align: center;
 	align-content: center;
- }
+	padding: 30px 30px;
+}
 
 .block-subtitle {
 	color: #fd634e;
 	font-size: 14px;
+	font-family: Montserrat, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -100,16 +152,88 @@
 .block-title {
 	color: #a2ca28;
 	font-size: 35px;
-	font-weight: normal;
+	font-family: OpenSans, sans-serif;
+	font-weight: 100;
 	text-transform: uppercase;
 }
 
 .block-text {
 	color: #656e74;
 	font-size: 14px;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
 	}
 
 .block-link {
 	color: #a2ca28;
 	font-size: 14px;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
+}
+
+.hover {
+	position: relative;
+}
+
+.hover:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(0, 0, 0, 50%);
+	width: 700px;
+	height: 348px;
+}
+
+.text-hover {
+	position: absolute;
+	left: 275px;
+	top: 125px;
+	text-align: center;
+}
+
+.footer-background {
+	background: #0d1119;
+}
+
+.newsletter {
+	display: flex;
+	background: #0d1119;
+	padding: 20px 100px 0 50px;
+}
+.contacts {
+	display: flex;
+	background: #0d1119;
+	padding: 40px 0 20px 0;
+	width: 1180px;
+	margin: 0 auto;
+}
+
+.social-nets {
+	display: flex;
+	background: #0d1119;
+	width: 300px;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.input {
+	font-family: ProximaNova, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px 15px;
+	border: 2px;
+	border-style: solid;
+	border-color: #0d1119;
+}
+
+.button {
+	background-color: #a2ca28;
+	font-family: ProximaNova, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	color: #ffffff;
+	border: 2px;
+	border-style: solid;
+	border-color: #0d1119;
+	padding: 10px 15px;
 }

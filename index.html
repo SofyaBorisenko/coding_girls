@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href=eric-meyer-reset.min_.css">
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Moscow Coding School</title>
 </head>
@@ -72,7 +74,7 @@
 				</a>
 			</li>
 		</ul>
-		<div class="body">
+		<section class="info">
 			<div class="block">
 				<h3 class="block-subtitle">It's all about</h3>
 				<h2 class="block-title">Fitness first</h2>
@@ -80,10 +82,22 @@
 				<p class="block-text">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 				<a href="" class="block-link">Read More</a>
 			</div>
-			<img src="images/img1.jpg" width="700px">
-		</div>
-		<div class="body">
-			<img src="images/img2.jpg" width="700px">
+			<div class="hover">
+				<div class="text-hover">
+					<h2 class="block-title">Fitness First</h2>
+					<h3 class="block-subtitle">It's all about</h3>
+				</div>
+				<img src="images/img1.jpg" width="700px">
+			</div>
+		</section>
+		<section class="info">
+			<div class="hover">
+				<div class="text-hover">
+					<h3 class="block-subtitle">Love your</h3>
+					<h2 class="block-title">Your body</h2>
+				</div>
+				<img src="images/img2.jpg" width="700px">
+			</div>
 			<div class="block">
 				<h3 class="block-subtitle">Love your</h3>
 				<h2 class="block-title">Your body</h2>
@@ -91,36 +105,38 @@
 				<p class="block-text">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 				<a href="" class="block-link">Read More</a>
 			</div>
-		</div>
+		</section>
 	</main>
-	<footer>
-		<form>
-			<input type="text" placeholder="Your name">
-			<input type="text" placeholder="Your Email">
-			<button>Join Newletter</button>
-		</form>
-		<ul>
-			<li>
-				<a href="">
-					<img src="images/fb.png">
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/tw.png">
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/yt.png">
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<img src="images/ln.png">
-				</a>
-			</li>
-		</ul>
+	<footer class="footer-background">
+		<div class="contacts">
+			<form class="newsletter">
+				<input class="input" type="text" placeholder="Your name">
+				<input class="input" type="text" placeholder="Your Email">
+				<button class="button">Join Newsletter</button>
+			</form>
+			<ul class="social-nets">
+				<li>
+					<a href="">
+						<img src="images/fb.png">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/tw.png">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/yt.png">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/ln.png">
+					</a>
+				</li>
+			</ul>
+		</div>
 	</footer>
 </body>
 </html>
