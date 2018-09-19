@@ -70,6 +70,10 @@
 	text-decoration: none;
 }
 
+.menu-link:hover {
+	animation: MenuAnimation 1s; 
+}
+
 .title {
 	color: #ffffff;
 	font-size: 40px;
@@ -248,4 +252,17 @@
 	border-style: solid;
 	border-color: #0d1119;
 	padding: 10px 15px;
+}
+
+@keyframes MenuAnimation {
+  0%, 100% {
+    font-size: 13px;
+    color: #ffffff;
+ }
+  50% {
+    font-size: 17px;
+    color: #000000;
+    background-position: 0 -0.1em;
+    background-image: linear-gradient(to right, #ffffff 0, #a2ca28 100%);
+  }
 }
