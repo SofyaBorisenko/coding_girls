@@ -11,6 +11,12 @@
 }
 
 @font-face {
+	src: url('./fonts/ProximaNova-Reg.otf');
+	font-family: ProximaNova;
+	font-weight: 500;
+}
+
+@font-face {
 	src: url('./fonts/ProximaNova-Semibold.ttf');
 	font-family: ProximaNova;
 	font-weight: 600;	
@@ -34,7 +40,7 @@
 }
 
 @font-face {
-	src: url('./fonts/Montserrat-Regular.otf');
+	src: url('./fonts/Montserrat-Regular.ttf');
 	font-family: Montserrat;
 }
 
@@ -58,6 +64,7 @@
 	justify-content: space-between;
 	font-family: AvenirNext, sans-serif;
 	font-weight: 400;
+	padding: 20px 20px 0px 0px;
 }
 
 
@@ -82,7 +89,15 @@
 	text-transform: uppercase;
 	font-family: AvenirNext, sans-serif;
 	font-weight: 400;
-	margin: 552px 0 0 113px;
+	margin: 559px 0 0 114px;
+}
+
+.title-green {
+	color: #a2ca28;
+}
+
+.title-red {
+	color: #fd634e;
 }
 
 .subtitle {
@@ -91,7 +106,8 @@
 	text-transform: uppercase;
 	font-family: OpenSans, sans-serif;
 	font-weight: 700;
-	margin: 0 0 0 278px;
+	margin: 7px 0 0px 279px;
+	letter-spacing: 3px;
 }
 
 .main-page {
@@ -102,8 +118,8 @@
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	padding: 80px 80px 100px 80px;
-	width: 1185px;
+	padding: 80px 80px 100px 60px;
+	width: 1180px;
 	margin: 0 auto;
 }
 
@@ -119,18 +135,19 @@
 	font-size: 24px;
 	font-family: OpenSans, sans-serif;
 	font-weight: 400;
-	margin: -8px 0px 20px -4px;
+	margin: 0px 0px 18px 0px;
 }
 
 .benefits-text {
 	color: #ffffff;
 	font-family: ProximaNova, sans-serif;
 	font-size: 14px;
-	height: 91px; 
+	height: 111px; 
 }
 
 .benefits-image-container {
-	height: 60px;
+	height: 52px;
+	margin: 0 0 0px 3px;
 }
 
 .benefits-link {
@@ -162,7 +179,7 @@
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	margin: 21px 0px 0px 3px;
+	margin: 23px 0px 0px 3px;
 }
 
 .block-title {
@@ -171,7 +188,7 @@
 	font-family: OpenSans, sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
-	margin: 0px 0px 11px 2px;
+	margin: 8px 0px 21px 2px;
 }
 
 .block-text {
@@ -179,9 +196,9 @@
 	font-size: 14px;
 	font-family: OpenSans, sans-serif;
 	font-weight: 400;
-	margin: 19px 5px 4px 2px;
-	padding: 0px 15px 0px 15px;
-    line-height: 26px;
+    margin: 16px 8px 5px 3px;
+    padding: 0px 15px 0px 15px;
+    line-height: 1.9;
 }
 
 .block-link {
@@ -210,7 +227,7 @@
 	width: 100%;
 	top: 50%;
 	text-align: center;
-	margin-top: -48px;
+	margin-top: -69px;
 	opacity: 0;
 	transition: all 2s;
 }
@@ -232,12 +249,8 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 100px;
+	padding: 65px 0px 35px 58px;
 	box-sizing: border-box;
-}
-
-.form {
-	margin-top: 15px;
 }
 
 .contacts {
@@ -251,31 +264,109 @@
 .social-nets {
 	display: flex;
 	background: #0d1119;
-	width: 200px;
+	width: 240px;
 	list-style: none;
 	justify-content: space-between;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+	background: red;
+	border-radius: 50%;
+	position: relative;
+}
+
+.icon:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.icon-fb {
+	background: #2e3192;
+}
+
+.icon-fb:before {
+	background-image: url("images/fb.png");
+    width: 12px;
+    height: 20px;
+    background-size: 12px 20px;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -6px;
+}
+
+.icon-tw {
+	background: #00aeef;
+}
+
+.icon-tw:before {
+	background-image: url("images/tw.png");
+    width: 20px;
+    height: 15px;
+    background-size: 20px 15px;
+    top: 50%;
+    margin-top: -7px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.icon-yt {
+	background: #ed3123;
+}
+
+.icon-yt:before {
+	background-image: url("images/yt.png");
+	width: 20px;
+    height: 16px;
+    background-size: 20px 16px;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.icon-ln {
+	background: #171a8f;
+}
+
+.icon-ln:before {
+	background-image: url("images/ln.png");
+	width: 19px;
+    height: 20px;
+    background-size: 19px 20px;
+    top: 50%;
+    margin-top: -11px;
+    left: 50%;
+    margin-left: -8px;
 }
 
 .input {
 	font-family: ProximaNova, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	padding: 15px 20px;
-	border: 2px;
+    padding: 17px 50px 15px 32px;
+    border: 2px;
 	border-style: solid;
 	border-color: #0d1119;
+	border-radius: 6px;
 }
 
 .button {
 	background-color: #a2ca28;
 	font-family: ProximaNova, sans-serif;
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #ffffff;
 	border: 2px;
 	border-style: solid;
+	border-radius: 6px;
 	border-color: #0d1119;
-	padding: 15px 25px;
+	padding: 18px 45px 17px 30px;
 }
 
 @keyframes MenuAnimation {
