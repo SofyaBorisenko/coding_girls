@@ -1,12 +1,19 @@
 @font-face {
 	src: url('./fonts/AvenirNextCyr-Regular.ttf');
 	font-family: AvenirNext;
+	font-weight: 400;
 }
 
 @font-face {
 	src: url('./fonts/ProximaNova-Reg.otf');
 	font-family: ProximaNova;
 	font-weight: 400;
+}
+
+@font-face {
+	src: url('./fonts/ProximaNova-Reg.otf');
+	font-family: ProximaNova;
+	font-weight: 500;
 }
 
 @font-face {
@@ -33,14 +40,14 @@
 }
 
 @font-face {
-	src: url('./fonts/Montserrat-Regular.otf');
+	src: url('./fonts/Montserrat-Regular.ttf');
 	font-family: Montserrat;
 }
 
 .header {
 	display: flex;
     justify-content: space-between;
-    padding: 30px 20px
+    padding: 39px 52px;
 }
 
 .background-image {
@@ -52,10 +59,12 @@
 
 .menu {
 	display: flex;
-	width: 500px;
+	width: 506px;
 	list-style: none;
 	justify-content: space-between;
 	font-family: AvenirNext, sans-serif;
+	font-weight: 400;
+	padding: 20px 20px 0px 0px;
 }
 
 
@@ -70,12 +79,25 @@
 	text-decoration: none;
 }
 
+.menu-link:hover {
+	animation: MenuAnimation 1s; 
+}
+
 .title {
 	color: #ffffff;
 	font-size: 40px;
 	text-transform: uppercase;
 	font-family: AvenirNext, sans-serif;
-	margin: 500px 0 0 30px;
+	font-weight: 400;
+	margin: 559px 0 0 114px;
+}
+
+.title-green {
+	color: #a2ca28;
+}
+
+.title-red {
+	color: #fd634e;
 }
 
 .subtitle {
@@ -84,42 +106,51 @@
 	text-transform: uppercase;
 	font-family: OpenSans, sans-serif;
 	font-weight: 700;
-	margin: 5px 0 0 30px;
+	margin: 7px 0 0px 279px;
+	letter-spacing: 3px;
 }
 
 .main-page {
 	background: #a2ca28;
 }
 
-.main-menu {
+.benefits {
 	display: flex;
-	align-items: baseline;
 	list-style: none;
 	justify-content: space-between;
-	padding: 80px 80px 80px 50px;
+	padding: 80px 80px 100px 60px;
 	width: 1180px;
 	margin: 0 auto;
 }
 
-.main-menu-item {
+.benefits-item {
 	width: 25%;
-	margin: 15px 15px;
+	max-width: 260px;
+    margin: 14px 14px;
+    line-height: 1.65;
 }
 
-.main-subtitle {
+.benefits-subtitle {
 	color: #ffffff;
 	font-size: 24px;
 	font-family: OpenSans, sans-serif;
 	font-weight: 400;
+	margin: 0px 0px 18px 0px;
 }
 
-.main-menu-text {
+.benefits-text {
 	color: #ffffff;
 	font-family: ProximaNova, sans-serif;
 	font-size: 14px;
+	height: 111px; 
 }
 
-.main-menu-link {
+.benefits-image-container {
+	height: 52px;
+	margin: 0 0 0px 3px;
+}
+
+.benefits-link {
 	color: #ffffff;
 	text-decoration: none;
 	font-size: 14px;
@@ -130,7 +161,7 @@
 .info {
 	display: flex;
 	width: 1180px;
-	height: 348px;
+	height: 394px;
 	margin: 0 auto;
 }
 
@@ -147,6 +178,8 @@
 	font-family: Montserrat, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	margin: 23px 0px 0px 3px;
 }
 
 .block-title {
@@ -155,6 +188,7 @@
 	font-family: OpenSans, sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
+	margin: 8px 0px 21px 2px;
 }
 
 .block-text {
@@ -162,7 +196,10 @@
 	font-size: 14px;
 	font-family: OpenSans, sans-serif;
 	font-weight: 400;
-	}
+    margin: 16px 8px 5px 3px;
+    padding: 0px 15px 0px 15px;
+    line-height: 1.9;
+}
 
 .block-link {
 	color: #a2ca28;
@@ -177,29 +214,45 @@
 
 .hover:before {
 	content: '';
-	display: block;
-	position: absolute;
+	opacity: 0;
 	background: rgba(0, 0, 0, 50%);
-	width: 700px;
-	height: 348px;
+	width: 780px;
+	height: 394px;
+	position: absolute;
+	transition: all 2s;
 }
 
 .text-hover {
 	position: absolute;
-	left: 275px;
-	top: 125px;
+	width: 100%;
+	top: 50%;
 	text-align: center;
+	margin-top: -69px;
+	opacity: 0;
+	transition: all 2s;
 }
 
-.footer-background {
+.hover:hover .text-hover{
+	opacity: 1;
+}
+
+.hover:hover:before{
+	opacity: 1;
+}
+
+.footer {
 	background: #0d1119;
 }
 
-.newsletter {
+.footer-container {
+	width: 1180px;
+	margin: 0 auto;
 	display: flex;
-	background: #0d1119;
-	padding: 20px 100px 0 50px;
+	justify-content: space-between;
+	padding: 65px 0px 35px 58px;
+	box-sizing: border-box;
 }
+
 .contacts {
 	display: flex;
 	background: #0d1119;
@@ -211,29 +264,118 @@
 .social-nets {
 	display: flex;
 	background: #0d1119;
-	width: 300px;
+	width: 240px;
 	list-style: none;
 	justify-content: space-between;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+	background: red;
+	border-radius: 50%;
+	position: relative;
+}
+
+.icon:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.icon-fb {
+	background: #2e3192;
+}
+
+.icon-fb:before {
+	background-image: url("images/fb.png");
+    width: 12px;
+    height: 20px;
+    background-size: 12px 20px;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -6px;
+}
+
+.icon-tw {
+	background: #00aeef;
+}
+
+.icon-tw:before {
+	background-image: url("images/tw.png");
+    width: 20px;
+    height: 15px;
+    background-size: 20px 15px;
+    top: 50%;
+    margin-top: -7px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.icon-yt {
+	background: #ed3123;
+}
+
+.icon-yt:before {
+	background-image: url("images/yt.png");
+	width: 20px;
+    height: 16px;
+    background-size: 20px 16px;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.icon-ln {
+	background: #171a8f;
+}
+
+.icon-ln:before {
+	background-image: url("images/ln.png");
+	width: 19px;
+    height: 20px;
+    background-size: 19px 20px;
+    top: 50%;
+    margin-top: -11px;
+    left: 50%;
+    margin-left: -8px;
 }
 
 .input {
 	font-family: ProximaNova, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	padding: 10px 15px;
-	border: 2px;
+    padding: 17px 50px 15px 32px;
+    border: 2px;
 	border-style: solid;
 	border-color: #0d1119;
+	border-radius: 6px;
 }
 
 .button {
 	background-color: #a2ca28;
 	font-family: ProximaNova, sans-serif;
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #ffffff;
 	border: 2px;
 	border-style: solid;
+	border-radius: 6px;
 	border-color: #0d1119;
-	padding: 10px 15px;
+	padding: 18px 45px 17px 30px;
+}
+
+@keyframes MenuAnimation {
+  0%, 100% {
+    color: #ffffff;
+ }
+  50% {
+    color: #000000;
+    background-position: 0 -0.1em;
+    background-image: linear-gradient(to right, #ffffff 0, #a2ca28 100%);
+  }
 }
